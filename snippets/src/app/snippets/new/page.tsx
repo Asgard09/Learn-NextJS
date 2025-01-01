@@ -12,6 +12,7 @@ export default function SnippetCreatePage() {
 
     // Create a new record in the database
     const snippet = await db.snippet.create({
+    //await ensures the function waits for the database operation to complete before proceeding.
       data: {
         title,
         code,
